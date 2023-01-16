@@ -25,7 +25,7 @@ class Book:
         self.name = name
         self.pages = pages
 
-    def __str__(self):
+    def __str__(self) -> str:
         """
         Метод __str__ должен возвращать строку формата, где "название_книги" берется с помощью атрибута name
 
@@ -33,7 +33,7 @@ class Book:
         """
         return f'Книга "{self.name}"'
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         """
         Метод __repr__ должен возвращать валидную python строку, по которой можно инициализировать точно такой же экземпляр
 
